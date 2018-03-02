@@ -1,5 +1,5 @@
 {
-  "name": "react-universal-blog",
+  "name": "cameron-blog",
   "homepage": "http://kaylorburdell.github.io/cameron-blog",
   "version": "1.0.0",
   "engines": {
@@ -28,7 +28,9 @@
   },
   "scripts": {
     "webpack-dev-server": "NODE_ENV=development PORT=8080 webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback",
-    "development": "cp views/index.html public/index.html && NODE_ENV=development webpack && npm run webpack-dev-server"
+    "development": "cp views/index.html public/index.html && NODE_ENV=development webpack && npm run webpack-dev-server",
+    "predeploy": "npm run build",
+    "deploy": "cameron-blog -d build"
   },
   "author": "",
   "license": "ISC",
