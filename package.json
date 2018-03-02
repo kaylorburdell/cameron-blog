@@ -1,5 +1,6 @@
 {
   "name": "react-universal-blog",
+  "homepage": "http://kaylorburdell.github.io/cameron-blog",
   "version": "1.0.0",
   "engines": {
     "node": "4.1.2",
